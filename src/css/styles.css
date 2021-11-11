@@ -25,6 +25,10 @@ body {
   padding-left: 0;
 }
 
+.country-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .country-item {
   display: flex;
   align-items: center;
