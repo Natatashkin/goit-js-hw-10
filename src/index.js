@@ -1,5 +1,4 @@
 import debounce from 'lodash.debounce';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchCountries } from './js/api';
 import getRefs from './js/refs';
 import { renderMarkup, clearCountriesList, clearCountry } from './js/render-markup';
