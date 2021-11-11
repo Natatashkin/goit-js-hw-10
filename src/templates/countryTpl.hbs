@@ -1,0 +1,27 @@
+{{#each this}}
+    <h1 class="country-title">
+        <img class="country-flag" src={{flags.svg}} alt="flag" width="30" height="30">
+        <span class="country-official-name">{{name.official}}</span>
+    </h1>
+    <ul class="country-data">
+        <li class="data-item">
+            <span class="data-name">capital:</span>
+            <span class="data-value">{{capital}}</span>
+        </li>
+        <li class="data-item">
+            <span class="data-name">population:</span>
+            <span class="data-value">{{population}}</span>
+        </li>
+        <li class="data-item">
+            <span class="data-name">languages:</span>
+            {{#each languages}}
+            {{#if @last}}
+            <span class="data-value">{{this}}</span>
+            {{else}}
+            <span class="data-value">{{this}},</span>
+            {{/if}}
+            {{/each}}
+        </li>
+    </ul>
+{{/each}}
+
